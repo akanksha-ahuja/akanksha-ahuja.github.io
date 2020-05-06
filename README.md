@@ -2,4 +2,4 @@
 
 ## Professional Portfolio - Akanksha Ahuja 
 
-This project outlines my education and profesional experiences as a Research Engineer. 
+The Project outlines my Education and Professional Experiences as a Research Engineer.

@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -27,21 +26,6 @@ body, html {
   padding: 16px;
 }
 
-.content-wrapper{
-    width:1100px;
-    padding:128px 16px;
-    margin: 0 auto;
-}
-
-.col-container {
-    display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
-}
-
-.col {
-    display: table-cell; /* Make elements inside the container behave like table cells */
-}
-
 .form{
     max-width: 800px;
     align-self: center;
@@ -53,19 +37,18 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card w3-opacity" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide"><b> AKANKSHA AHUJA</b></a>
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"> AKANKSHA AHUJA </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"> ABOUT</a>
-      <a href="#research" class="w3-bar-item w3-button"><i class="fa fa-line-chart"></i> RESEARCH</a>
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#research" class="w3-bar-item w3-button"><i class="fa fa-line-chart"></i> RESARCH</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="https://medium.com/scientific-computing" class="w3-bar-item w3-button"><i class="fa fa-file-text-o"></i> BLOG</a>
+      <a href="https://bit.ly/Medium-Scientific-Computing" class="w3-bar-item w3-button"><i class="fa fa-file-text-o"></i> BLOG</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
-
-
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
@@ -76,9 +59,9 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH</a>
+  <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH</a>
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="https://medium.com/scientific-computing" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
@@ -88,9 +71,9 @@ body, html {
     <span class="w3-jumbo w3-hide-small">Technlogical Advancements <br> Drive Scientific Discoveries</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Technlogical Advancements <br> Drive Scientific Discoveries</span><br>
     <span class="w3-large"> Building Software for Science and Research </span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"> About Akanksha </a></p>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about Akanksha</a></p>
   </div>
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
     <a href="https://bit.ly/GitHub-Akanksha"> <i class="fa fa-github fa-2x w3-hover-opacity" style=padding:10px></i></a>
     <a href="https://bit.ly/GoogleScholar-Akanksha"> <i class="fa fa-graduation-cap fa-2x w3-hover-opacity" style=padding:10px></i></a>
     <a href="https://bit.ly/Medium-Akanksha"> <i class="fa fa-medium fa-2x w3-hover-opacity" style=padding:10px></i></a>
@@ -99,118 +82,128 @@ body, html {
   </div>
 </header>
 
-<div class="w3-container" style="padding:64px 16px" id="about">
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center w3-large" style="padding:20px">An interdisciplinary computer engineer with technical and scientific research skills. Result-oriented software developer offering extensive experience in data science, machine learning, grid computing, statistical analysis, system administration with expertise in multiple programming languages and databases.</p>
-  <div class="w3-row-padding w3-center" style="padding:20px">
-    <div class="w3-quarter" style="margin-top:64px">
+  <p class="w3-center w3-large">An interdisciplinary computer engineer with technical and scientific research skills. Result-oriented software developer offering extensive experience in data science, machine learning, grid computing, statistical analysis, system administration with expertise in multiple programming languages and databases.</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large"><b> Research Software Developer </b></p>
-      <p> Building computational tools, dashboards, GUI and analysis frameworks for scientists to enhance both large scale and small scale experiments at CERN. </p>
-    </div>
-    <div class="w3-quarter" style="margin-top:64px">
+      <p class="w3-large">Research Software Developer</p>
+      <p>Building computational tools, dashboards, GUI and analysis frameworks for scientists to enhance both large scale and small scale experiments at CERN. </p>
+      </div>
+    <div class="w3-quarter">
       <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large"><b> Passionate About Science </b></p>
-      <p> Statistical Data Analysis of both quantitative and qualitative data to find anomalies and signatures in multiple scientific fields: astronomy, high energy physics, environment and global health.</p>
+      <p class="w3-large">Passionate About Science</p>
+      <p>Statistical Data Analysis of both quantitative and qualitative data to find anomalies and signatures in multiple scientific fields: astronomy, high energy physics, environment and global health.</p>
     </div>
-    <div class="w3-quarter" style="margin-top:64px">
+    <div class="w3-quarter">
       <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large"><b> Sustainable Design and Innovation </b></p>
-      <p> Designing eco-friendly and economical products, software and services to support diversity and inclusivity and for the socio-economic good of under-represented groups of people. </p>
+      <p class="w3-large">Sustainable Design and Innovation</p>
+      <p>Designing eco-friendly and economical products, software and services to support diversity and inclusivity and for the socio-economic good of under-represented groups of people. </p>
     </div>
-    <div class="w3-quarter" style="margin-top:64px">
+    <div class="w3-quarter">
       <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large"><b> Engineering Solutions </b></p>
-      <p> Interdisciplinary and cutting edge solutions to support the UN Sustainable Development Goals specifically: zero poverty, health and well being, gender equity and climate change.</p>
+      <p class="w3-large">Engineering Solutions</p>
+      <p>Interdisciplinary and cutting edge solutions to support the UN Sustainable Development Goals specifically: zero poverty, health and well being, gender equity and climate change.</p>
     </div>
   </div>
-</p>
 </div>
 
-
-
 <!-- Hi there, brief introduction -->
-<div class="w3-container w3-light-grey" style="padding:64px 16px">
-  <div class="w3-row-padding" style="padding:20px" >
-    <div class="w3-col m6" style="padding:20px">
-      <h3> Hi there, I am Akanksha </h3>
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Hi there, I am Akanksha.</h3>
       <p> I’m a Computer Scientist at CMS Offline Computing, at CERN, Switzerland. I manage, analyse and support the European grid sites of the WorldWide Computing Grid for production and analysis of the detector data. <br>
         <br> Previously, I was a Technical Student at AWAKE, and had an immersive experience in the world of High Energy Physics. I helped the physicists in my team and developed a remote control magnet software application for the electron beam line for long term and consistent monitoring.
         <br> <br> My experiences and efforts in my past and current research projects have stemmed out from uniting multiple disciplines, and an internal desire to build things that make this world a better place for everyone.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
     </div>
-    <div class="w3-col m6 w3-grayscale-max" style="padding:20px">
-      <img class="w3-image w3-round-large" src="Portfolio Media/me.JPG" alt="Akanksha Ahuja" width="700" height="394">
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-grayscale-max" src="Portfolio Media/me.jpg" alt="Buildings" width="700" height="394">
     </div>
   </div>
 </div>
 
-
 <!-- Research Section -->
-<div class="w3-container" style="padding:64px 16px" id="research">
-  <h3 class="w3-center"> RESEARCH EXPERIENCE</h3>
-  <p class="w3-center w3-large"> Scientific Collaborations Across The World</p>
-  <div class="w3-row-padding w3-grayscale" style="padding:20px">
-    <div class="col-container">
-      <div class="w3-row-padding w3-grayscale">
-        <div class="col w3-col l3 m6 w3-margin-bottom" style="padding:20px">
-          <img src="Portfolio Media/Research/1.png" alt="CMS" style="width:100%">
+<div class="w3-container" style="padding:128px 16px" id="research">
+  <h3 class="w3-center">RESEARCH EXPERIENCE</h3>
+  <p class="w3-center w3-large">Scientific Collaborations Across The World</p>
+  <div class="w3-row-padding w3-grayscale-max" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Portfolio Media/Research/1.png" alt="CMS" style="width:100%">
+        <div class="w3-container">
           <h3>CMS Experiment</h3>
-          <p class="w3-opacity">Particle Detector</p>
+          <p class="w3-opacity">Particle Detectorr</p>
           <p>The Compact Muon Solenoid detects particle collisions. The experiment is designed to capture and observe any new physics phenomena at the LHC.</p>
-          <p><a href="https://bit.ly/VisitCMSCERN"><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+          <p><a href="https://bit.ly/VisitCMSCERN"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-globe"></i> Visit CMS </button></a></p>
         </div>
-        <div class="col w3-col l3 m6 w3-margin-bottom" style="padding:20px">
-          <img src="Portfolio Media/Research/2.png"alt="AWAKE" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Portfolio Media/Research/2.png"  alt="AWAKE" style="width:100%">
+        <div class="w3-container">
           <h3>AWAKE Experiment</h3>
-          <p class="w3-opacity">Linear Particle Accelerator</p>
+          <p class="w3-opacity">Particle Accelerator</p>
           <p>AWAKE is a particle accelerator and increases the energy of the particles. It achieved the first ever acceleration of electrons in a proton-driven plasma wave.</p>
-          <p><a href="https://bit.ly/VisitAWAKE"><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+          <p><a href="https://bit.ly/VisitAWAKE"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-globe"></i> Visit AWAKE</button></a></p>
         </div>
-        <div class="col w3-col l3 m6 w3-margin-bottom" style="padding:20px">
-          <img src="Portfolio Media/Research/3.png" alt="CERN" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Portfolio Media/Research/3.png"  alt="CERN" style="width:100%">
+        <div class="w3-container">
           <h3>CERN</h3>
           <p class="w3-opacity">Particle Physics</p>
-          <p> Physicists and engineers from around the world use the most complex scientific instruments and one of the largest machines to study the smallest particles. </p>
-          <p><a href="https://bit.ly/VisitCERN"><button class="w3-button w3-light-grey w3-block">Contact </button></a></p>
+          <p>Physicists and engineers from around the world use the most complex scientific instruments and one of the largest machines to study the smallest particles. </p>
+          <p><a href="https://bit.ly/VisitCERN"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-globe"></i> Visit CERN </button></a></p>
         </div>
-        <div class="col w3-col l3 m6 w3-margin-bottom" style="padding:20px">
-          <img src="Portfolio Media/Research/4.png" alt="MRU" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Portfolio Media/Research/4.png"  alt="MRU" style="width:100%">
+        <div class="w3-container">
           <h3>Department of Physics</h3>
           <p class="w3-opacity">Manav Rachna University</p>
           <p>Physicists study the nature of atmosphere and disasters. Innovate eco-friendly practices for the under-represented sections of society.</p>
-          <p><a href="https://bit.ly/PinkBins"><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+            <p><a href="https://bit.ly/PinkBins"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-globe"></i> Contact</button></a></p>
         </div>
       </div>
+    </div>
   </div>
-</div>
 </div>
 
 <!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-black w3-padding-64">
+<div class="w3-container w3-row w3-center  w3-black w3-padding-64">
   <div class="w3-quarter">
     <span class="w3-xxlarge">10+</span>
-    <br> Articles, Blogs and Tutorials <br> (Blog, Medium)
+    <br> Articles, Blogs and Tutorials <br> Blog, Medium
   </div>
   <div class="w3-quarter">
     <span class="w3-xxlarge">100+</span>
-    <br> Professional Certifications and Training <br> (Summer Schools, LinkedIn, edX, Coursera)
+    <br> Professional Certifications and Training <br> Summer Schools, LinkedIn, edX, Coursera
   </div>
   <div class="w3-quarter">
-    <span class="w3-xxlarge">20+</span>
-    <br> Programming Projects <br> (Python, C++, Machine Learning)
+    <span class="w3-xxlarge">25+</span>
+    <br> Programming Projects <br> Python, C++, Machine Learning
   </div>
   <div class="w3-quarter">
     <span class="w3-xxlarge">10+</span>
-    <br> Research Papers, Patents, Talks and Posters  <br> (Computing and Science)
+    <br> Research Papers, Patents, Talks and Posters <br> Computing and Science
   </div>
 </div>
 
 <!-- Work Section -->
-<div class="w3-container" style="padding:64px 16px" id="work">
+<div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center"> PROJECTS AND COLLABORATIONS </h3>
-  <p class="w3-center w3-large">Design, Development and Innovation for Science and Humanity</p>
+  <p class="w3-center w3-large"> Design, Development and Innovation for Science and Humanity</p>
 
-  <div class="w3-row-padding w3-grayscale-max" style="margin:64px">
+  <div class="w3-row-padding w3-grayscale-max" style="margin-top:64px">
     <div class="w3-col l3 m6">
       <img src="Portfolio Media/cms2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
     </div>
@@ -225,7 +218,7 @@ body, html {
     </div>
   </div>
 
-  <div class="w3-row-padding w3-section w3-grayscale-max" style="margin:64px">
+  <div class="w3-row-padding w3-section w3-grayscale-max">
     <div class="w3-col l3 m6">
       <img src="Portfolio Media/waste.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
     </div>
@@ -238,6 +231,15 @@ body, html {
     <div class="w3-col l3 m6">
       <img src="Portfolio Media/ATLAS.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
     </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
   </div>
 </div>
 
@@ -258,25 +260,23 @@ body, html {
 </div>
 
 
-<!-- Contact Section -->
-<div class="w3-container" style="padding:64px 16px" id="contact">
-  <h3 class="w3-center">CONTACT ME</h3>
-  <div style="margin-top:48px">
 
-    <p class="w3-center w3-large">Let's get in touch. Send me a message :)</p>
+<!-- Contact Section -->
+<div class="w3-container w3-white" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Let's get in touch. Send me a message:</p>
+  <div style="margin-top:48px">
     <form action="https://formspree.io/xvowokrp" method="POST" class="form">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
       <p class="w3-center w3-large">
-        <button id="thanks" class="w3-button w3-black" type="submit" onclick="message()">
+        <button class="w3-button w3-black" type="submit" id="thanks" onclick="message()">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
     </form>
-
-
   </div>
 </div>
 
@@ -293,13 +293,19 @@ body, html {
   <p> Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
-
-
 <script>
 
 // Thank you for contacting us
-function message() {
-document.getElementById("thanks").innerHTML = "Thanks for your message!";
+//function message() {
+//document.getElementById("thanks").innerHTML = "Thanks for your message!";
+//}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
 }
 
 
@@ -318,9 +324,6 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
-
-
-
 </script>
 
 </body>
